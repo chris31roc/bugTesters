@@ -1,0 +1,29 @@
+{
+  "name": "chat-app",
+  "version": "1.0.0",
+  "description": "An application that allows you to chat amongst users of the app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chris31roc/project2.git"
+  },
+  "keywords": [
+    "chat-app",
+    "project2"
+  ],
+  "author": "Christopher Hicks Nikki Nguyen Kyle Barrand Muhammad Usman Walter Leiva",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chris31roc/project2/issues"
+  },
+  "homepage": "https://github.com/chris31roc/project2#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "mysql": "^2.18.1"
+  }
+}
