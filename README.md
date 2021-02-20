@@ -12,10 +12,10 @@
 
 * [Description](#Description)
 * [Collaborators](#Collaborators)
-* [App UI](#AppUI)
+* [App UI](#App-UI)
 * [Setup](#Setup)
-* [File Structure](#FileStructure)
-* [Technologies Used](#TechnologiesUsed)
+* [File Structure](#File-Structure)
+* [Technologies Used](#Technologies-Used)
 * [Contacts](#Contacts)
 
 
@@ -91,21 +91,21 @@ node index.js
 ## Contacts
 
 - Christopher Hicks
-    * Github - chris31roc
+    * Github - [chris31roc](https://github.com/chris31roc)
     * email - chris31roc@yahoo.com
 
 - Muhammad Usman 
-    * Github - usman3278
+    * Github - [usman3278](https://github.com/usman3278)
     * email - usman327820@gmail.com
 
 - Kyle 
-    * Github - kbear3
+    * Github - [kbear3](https://github.com/kbear3)
     * email - kyleb3@vt.edu
 
 - Walter Leiva
-    * Github - wleivax
+    * Github - [wleivax](https://github.com/wleivax)
     * email - leivawalt@gmail.com
 
 - Nikki Nguyen
-    * Github - technikks
+    * Github - [technikks](https://github.com/technikks)
     * email - nguyen.nikki@hotmail.com
