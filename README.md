@@ -1,23 +1,18 @@
-### Chat App (Working Title)
+# Chat App (Working Title)
+" * Photos of Application will go here * "
 
-" * Photo of Application will go here * "
 
-
-# Link to Application
+## Link to Application
 [VIEW OUR WORK HERE!]()
 
 
-
 ## Table of Contents
-
 * [Description](#Description)
-* [Collaborators](#Collaborators)
-* [App UI](#App-UI)
+* [Flow Chart](#Flow-Chart)
 * [Setup](#Setup)
-* [File Structure](#File-Structure)
 * [Technologies Used](#Technologies-Used)
-* [Contacts](#Contacts)
-
+* [Future Improvements](#Future-Improvements)
+* [Collaborators](#Collaborators)
 
 
 ## Description
@@ -25,18 +20,8 @@
 This application allows users to chat with each other in real time. The application utilizes Node and Express for web servers and is backed by MySQL database with a Sequelize ORM. The appication is deloyed using Heroku. 
 
 
-
-## Collaborators
-* Chris Hicks - team captain, front end & floater
-* Muhammad Usman - front end  & API
-* Kyle - back end
-* Walter Leiva - back end
-* Nikki Nguyen - front end, demo powerpoint & floater
-
-## APP UI
-
-TBD
-
+## Flow Chart
+![FlowChart](./images/flow-chart.png)
 
 
 ## Setup
@@ -52,13 +37,6 @@ node index.js
 ```
 
 
-
-## File Structure
-
-- File structure photo will go here
-
-
-
 ## Technologies Used
 
 - HTML
@@ -69,25 +47,28 @@ node index.js
 - NPM MySQL
 
 
+## Future Improvements
 
-## Contacts
+Coming Soon 
 
-- Christopher Hicks
-    * Github - [chris31roc](https://github.com/chris31roc)
-    * email - chris31roc@yahoo.com
 
-- Muhammad Usman 
-    * Github - [usman3278](https://github.com/usman3278)
-    * email - usman327820@gmail.com
+## Collaborators
+**Chris Hicks**: team captain, front end & floater
+    - Github: [chris31roc](https://github.com/chris31roc)
+    - Email: chris31roc@yahoo.com
 
-- Kyle 
-    * Github - [kbear3](https://github.com/kbear3)
-    * email - kyleb3@vt.edu
+**Muhammad Usman**: front end & API
+    - Github: [usman3278](https://github.com/usman3278)
+    - Email: usman327820@gmail.com
 
-- Walter Leiva
-    * Github - [wleivax](https://github.com/wleivax)
-    * email - leivawalt@gmail.com
+**Kyle Barrand**: back end
+    - Github: [kbear3](https://github.com/kbear3)
+    - Email: kyleb3@vt.edu
 
-- Nikki Nguyen
-    * Github - [technikks](https://github.com/technikks)
-    * email - nguyen.nikki@hotmail.com
+**Walter Leiva**: back end
+    - Github: [wleivax](https://github.com/wleivax)
+    - Email: leivawalt@gmail.com
+
+**Nikki Nguyen**: front end, demo poweroint, flow chart & floater
+    - Github: [technikks](https://github.com/technikks)
+    - Email: nguyen.nikki@hotmail.com
