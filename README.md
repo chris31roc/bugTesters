@@ -54,21 +54,26 @@ Coming Soon
 
 ## Collaborators
 **Chris Hicks**: team captain, front end & floater
+   
     - Github: [chris31roc](https://github.com/chris31roc)
     - Email: chris31roc@yahoo.com
 
 **Muhammad Usman**: front end & API
+   
     - Github: [usman3278](https://github.com/usman3278)
     - Email: usman327820@gmail.com
 
 **Kyle Barrand**: back end
+   
     - Github: [kbear3](https://github.com/kbear3)
     - Email: kyleb3@vt.edu
 
 **Walter Leiva**: back end
+   
     - Github: [wleivax](https://github.com/wleivax)
     - Email: leivawalt@gmail.com
 
 **Nikki Nguyen**: front end, demo poweroint, flow chart & floater
+   
     - Github: [technikks](https://github.com/technikks)
     - Email: nguyen.nikki@hotmail.com
