@@ -1,24 +1,44 @@
-const express = require('express');
+const express = require("express")
+const session = require("express-session")
+const bodyParser = require("body-parser")
+const passport = require("passport")
+const env = require('dotenv').config();
 
-// Sets up the Express App
-const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8080
+const db = require("./models")
 
-// Requiring our models for syncing
-const db = require('./models');
+const app = express()
 
-// Sets up the Express app to handle data parsing
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
 
-// Static directory
-app.use(express.static('public'));
+app.use(session({ secret: "keyboard cat", resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
 
-// Routes
-require('./routes/api-routes.js')(app);
 
-// Syncing our sequelize models and then starting our Express app
+const exphbs = require("express-handlebars")
+const _handlebars = require('handlebars')
+const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access')
+
+
+app.engine("handlebars", exphbs({ 
+    defaultLayout: "main",
+    handlebars: allowInsecurePrototypeAccess(_handlebars)
+}));
+app.set("view engine", "handlebars");
+
+const routes = require('./controllers/posts_controller');
+
+app.use(routes)
+
 db.sequelize.sync().then(() => {
-  app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
-});
-
+    app.listen(PORT, () => {
+      console.log(
+        "==> 🌎  Listening on port %s. Visit http://localhost:%s/ in your browser.",
+        PORT,
+        PORT
+      );
+    });
+  });
+  
