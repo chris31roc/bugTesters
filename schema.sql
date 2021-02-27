@@ -30,6 +30,6 @@ CREATE TABLE messages (
     `created at` DATETIME NOT NULL
 );
 
-SELECT `message_ID`, `messahe_content`, `user`, `user_ID`
+SELECT `message_ID`, `message_content`, `user`, `user_ID`
 FROM `messages`
 INNER JOIN `users` ON messages.user = users.user_ID;
