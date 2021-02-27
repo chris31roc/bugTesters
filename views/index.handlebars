@@ -1,0 +1,72 @@
+<nav class="navbar navbar-light bg-info">
+ <a class="navbar-brand" href="/">BugTesters
+  <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-bug" viewBox="0 0 16 16">
+   <path d="M4.355.522a.5.5 0 0 1 .623.333l.291.956A4.979 4.979 0 0 1 8 1c1.007 0 1.946.298 2.731.811l.29-.956a.5.5 0 1 1 .957.29l-.41 1.352A4.985 4.985 0 0 1 13 6h.5a.5.5 0 0 0 .5-.5V5a.5.5 0 0 1 1 0v.5A1.5 1.5 0 0 1 13.5 7H13v1h1.5a.5.5 0 0 1 0 1H13v1h.5a1.5 1.5 0 0 1 1.5 1.5v.5a.5.5 0 1 1-1 0v-.5a.5.5 0 0 0-.5-.5H13a5 5 0 0 1-10 0h-.5a.5.5 0 0 0-.5.5v.5a.5.5 0 1 1-1 0v-.5A1.5 1.5 0 0 1 2.5 10H3V9H1.5a.5.5 0 0 1 0-1H3V7h-.5A1.5 1.5 0 0 1 1 5.5V5a.5.5 0 0 1 1 0v.5a.5.5 0 0 0 .5.5H3c0-1.364.547-2.601 1.432-3.503l-.41-1.352a.5.5 0 0 1 .333-.623zM4 7v4a4 4 0 0 0 3.5 3.97V7H4zm4.5 0v7.97A4 4 0 0 0 12 11V7H8.5zM12 6a3.989 3.989 0 0 0-1.334-2.982A3.983 3.983 0 0 0 8 2a3.983 3.983 0 0 0-2.667 1.018A3.989 3.989 0 0 0 4 6h8z"/>
+  </svg>
+ </a>
+  <span class="navbar-text">
+      <a class="navbar-brand" href="/logout">Logout</a>
+  </span>
+</nav>
+<br>
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-8">
+      {{#each posts}}
+      <form method="post" action="/api/posts/{{id}}/delete">
+      <div class="card">
+        <div class="card-body">
+          <p class="card-text"><h3><b>{{post_title}}</a></b></h3></p>
+        </div>
+
+        <div class="card-body">
+          <p class="card-text"><b>Comment: </b> {{post_comment}}</p>
+          <p class="card-text"><b>Time Stamp: pending </b> </p>
+        </div>
+
+        <div class="card-body">
+          <p class="card-text"><a href="{{post_content}}" target="_blank">Link to repo</a></p>
+        </div>
+
+        <button 
+         class="btn btn-secondary" type="submit">Delete
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+           <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+          </svg>
+        </button>
+      </div>
+
+      </form>
+      <br>
+      {{/each}}
+    </div>
+  </div>
+
+  <div class="jumbotron col-md-8">
+
+    <div class="row">
+      <div class="col-md-8">
+        <h2>Ask a question</h2>
+        <form class="create-form make-post" action="/api/posts" method="POST">
+          <div class="form-group">
+            <label for="postTitle">Topic</label>
+            <input class="form-control" type="text" id="postTitle" name="post_title">
+          </div>
+
+          <div class="form-group">
+            <label for="postComment">Comment: </label>
+            <textarea class="form-control" id="postComment" name="post_comment" rows="3"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="postContent">Link to your repo</label>
+            <input class="form-control" type="text" id="postContent" name="post_content">
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
