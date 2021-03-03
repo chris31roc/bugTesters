@@ -1,5 +1,5 @@
-INSERT INTO Users (username, password, createdAt) VALUES ("bugtesteradmin", "1234", current_timestamp());
+INSERT INTO Users (username, password, createdAt, updatedAt) VALUES ("bugtestersadmin", "1234", current_timestamp(), current_timestamp());
 
-INSERT INTO Posts (username, post_title, post_body, post_link,createdAt) VALUES ("bugtesteradmin", "First Post!", "Yippie!", "It works!", current_timestamp());
+INSERT INTO Posts (username, post_title, createdAt) VALUES ("bugtestersadmin", "First Post!", current_timestamp());
 
-INSERT INTO Comments (username, post_id, comment_body, createdAt) VALUES ("bugtesteradmin", 1, "First Comment!", current_timestamp()); 
+INSERT INTO Comments (username, post_title, comment_body, createdAt) VALUES ("bugtestersadmin", "First Comment!", current_timestamp());

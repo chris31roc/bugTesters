@@ -64,26 +64,25 @@ router.get('/', isAuth, (req, res) => {
 // post post 
 router.post('/api/posts', isAuth, (req, res) => {
     let userIdent = req.user.id
-    console.log(req.body);
-    console.log(userIdent);
+    console.log(req.body.post_comment);
+    //console.log(userIdent);
     // console.log(db);
-    console.log(db.Posts);
+    //console.log(db.Posts);
     // AMEND HERE
-    console.log(typeof db.Posts.post_title);
-    console.log(db.Posts.post_title);
+    //console.log(typeof db.Posts.post_title);
+    //console.log(db.Posts.post_title);
     // AMEND HERE
     const newPost = db.Posts.build({
         post_title: req.body.post_title,
-        post_content: req.body.post_content,
-        post_comment: req.body.post_comment,
+        post_content: req.body.post_comment,
+        post_link: req.body.post_content,
         UserId: userIdent
-    })
+   })
     console.log(newPost);
     console.log(newPost.dataValues);
     db.Posts.create(newPost.dataValues).then(() => {
         res.redirect('/')
-    })
-         
+    })    
  })
 
 

@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS bug_tester;
+DROP DATABASE IF EXISTS bug_testers;
 
-CREATE DATABASE bug_tester;
+CREATE DATABASE bug_testers;
 
-USE bug_tester;
+USE bug_testers;
