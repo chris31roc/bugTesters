@@ -28,7 +28,7 @@ app.engine("handlebars", exphbs({
 }));
 app.set("view engine", "handlebars");
 
-const routes = require('./controllers/posts_controller');
+const routes = require('./controller/posts_controller');
 
 app.use(routes)
 

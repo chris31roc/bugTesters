@@ -1,3 +1,4 @@
+// Creating the Comment model
 module.exports = function(sequelize, DataTypes) {
     const Comment = sequelize.define("Comments", {
         comment_body: {
@@ -14,12 +15,15 @@ module.exports = function(sequelize, DataTypes) {
     
     // Associating Comment with Post
     Comment.associate = (models) => {
-        Comment.belongsTo(models.Post, {
-            foreignKey: {
-                allowNull: false
-            }
-        })
-    };
+        // A Comment can't be created without a Post due to the foreign key constraint
+        console.log(models.Posts)
+
+        Comment.belongsTo(models.Posts, {
+          foreignKey: {
+            allowNull: false,
+          },
+        });
+      };
 
     return Comment
 }

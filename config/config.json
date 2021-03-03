@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "",
-    "database": "bug_tester",
+    "password": "password",
+    "database": "bug_testers",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
