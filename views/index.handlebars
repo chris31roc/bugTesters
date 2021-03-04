@@ -16,7 +16,24 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
+.jumbotron {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.col-md-8 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 </style>
+
+
+<br>
+<br>
+<br>
+
 <div class="container">
 
   <div class="row">
@@ -29,11 +46,11 @@ body {
         </div>
 
         <div class="card-body">
-          <p class="card-text"><b>Comment: </b> {{post_comment}}</p>
+          <p class="card-text"><b>Comment: </b> {{post_content}}</p>
         </div>
 
         <div class="card-body">
-          <p class="card-text"><b>Link: </b> {{post_content}}</p>
+          <p class="card-text"><b>Link: </b> {{post_link}}</p>
         </div>
 
         <button
@@ -76,4 +93,5 @@ body {
       </div>
     </div>
   </div>
+
 </div>
