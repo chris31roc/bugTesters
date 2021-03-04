@@ -1,5 +1,5 @@
-# Bug Tester
-" * Photo of Application will go here * "
+# BugTesters
+![Photo of Application](./images/bugtesters-app.png)
 
 
 # Link to Application
@@ -24,7 +24,7 @@ This application utilizes Node and Express for web servers and is backed by MySQ
 
 
 ## Flow Chart
-![FlowChart](./images/flow-chart.png)
+![FlowChart](./images/flow-chart2.png)
 
 
 ## Setup
